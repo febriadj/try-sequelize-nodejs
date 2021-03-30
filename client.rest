@@ -7,7 +7,12 @@ POST http://localhost:8080/employee
 Content-Type: application/json
 
 {
-  "name": "febriadji",
-  "email": "febriadji@gmail.com",
+  "name": "itsuki nakano",
+  "email": "nakanoitsuki@gmail.com",
   "salary": 20500000
 }
+
+###
+
+DELETE http://localhost:8080/employee/3
+Content-Type: application/json

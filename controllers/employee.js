@@ -25,3 +25,22 @@ exports.postEmployee = async function(req, res, next) {
     console.log(err)
   }
 }
+
+exports.deleteEmployee = async function(req, res, next) {
+  try {
+    const params = req.params.id
+
+    await Employee.destroy({
+      where: { id: params }
+    })
+
+    res.status(200).json({
+      status: 'success',
+      code: 200,
+      message: 'managed to deleted employee'
+    })
+  }
+  catch(err) {
+    console.log(err)
+  }
+}
