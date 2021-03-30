@@ -1,0 +1,13 @@
+GET http://localhost:8080/employee
+Content-Type: application/json
+
+###
+
+POST http://localhost:8080/employee
+Content-Type: application/json
+
+{
+  "name": "febriadji",
+  "email": "febriadji@gmail.com",
+  "salary": 20500000
+}
