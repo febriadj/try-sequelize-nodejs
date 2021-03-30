@@ -7,8 +7,8 @@ POST http://localhost:8080/employee
 Content-Type: application/json
 
 {
-  "name": "itsuki nakano",
-  "email": "nakanoitsuki@gmail.com",
+  "name": "bot",
+  "email": "bot@gmail.com",
   "salary": 20500000
 }
 
@@ -16,3 +16,14 @@ Content-Type: application/json
 
 DELETE http://localhost:8080/employee/3
 Content-Type: application/json
+
+### 
+
+PUT http://localhost:8080/employee/4
+Content-Type: application/json
+
+{
+  "name": "anonymous",
+  "email": "anonymous@gmail.com",
+  "salary": 12000000
+}

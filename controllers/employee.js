@@ -44,3 +44,23 @@ exports.deleteEmployee = async function(req, res, next) {
     console.log(err)
   }
 }
+
+exports.updateEmployee = async function(req, res, next) {
+  try {
+    const params = req.params.id
+    const { name, email, salary } = req.body
+
+    await Employee.update({ name, email, salary }, {
+      where: { id: params }
+    })
+
+    res.status(200).json({
+      status: 'success',
+      code: 200,
+      message: 'managed to updated employee'
+    })
+  }
+  catch(err) {
+    console.log(err)
+  }
+}
